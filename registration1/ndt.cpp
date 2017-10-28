@@ -27,7 +27,7 @@ main(int argc, char** argv)
     //将输入的扫描过滤到原始尺寸的大概10%以提高匹配的速度。
     pcl::PointCloud<pcl::PointXYZ>::Ptr filtered_cloud(new pcl::PointCloud<pcl::PointXYZ>);
     pcl::VoxelGrid<pcl::PointXYZ> voxel_filter;
-    voxel_filter.setLeafSize(0.01, 0.01, 0.01);
+    voxel_filter.setLeafSize(0.005, 0.005, 0.005);
     voxel_filter.setInputCloud(input_cloud);
     voxel_filter.filter(*filtered_cloud);
     std::cout << "Filtered cloud contains " << filtered_cloud->size()
@@ -38,9 +38,9 @@ main(int argc, char** argv)
     //为终止条件设置最小转换差异
     ndt.setTransformationEpsilon(0.1);
     //为More-Thuente线搜索设置最大步长
-    ndt.setStepSize(0.1);
+    ndt.setStepSize(0.06);
     //设置NDT网格结构的分辨率（VoxelGridCovariance）
-    ndt.setResolution(1);
+    ndt.setResolution(0.6);
     //设置匹配迭代的最大次数
     ndt.setMaximumIterations(35);
     // 设置要配准的点云
@@ -53,6 +53,8 @@ main(int argc, char** argv)
     Eigen::Translation3f init_translation(1.79387, 0.720047, 0);
     Eigen::Matrix4f init_guess = (init_translation * init_rotation).matrix();
     */
+    Eigen::Matrix4f init_guess;
+
     //计算需要的刚体变换以便将输入的点云匹配到目标点云
     pcl::PointCloud<pcl::PointXYZ>::Ptr output_cloud(new pcl::PointCloud<pcl::PointXYZ>);
     //ndt.align(*output_cloud, init_guess);
@@ -86,7 +88,6 @@ main(int argc, char** argv)
         1, "input cloud");
     // 启动可视化
     viewer_final->addCoordinateSystem(1.0);
-    viewer_final->initCameraParameters();
     //viewer_final->spin();
     //等待直到可视化窗口关闭。
     while (!viewer_final->wasStopped())
