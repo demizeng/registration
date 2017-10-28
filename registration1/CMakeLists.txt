@@ -1,0 +1,13 @@
+cmake_minimum_required(VERSION 2.8)
+
+project(registration1)
+find_package(PCL 1.3 REQUIRED)
+include_directories(${PCL_INCLUDE_DIRS})
+link_directories(${PCL_LIBRARIES_DIRS})
+add_definitions(${PCL_DEFINITIONS})
+#add_executable(registration_1 "main.cpp")
+#target_link_libraries(registration_1 ${PCL_LIBRARIES})
+#add_executable(registration_2 "scaic.cpp")
+#target_link_libraries(registration_2 ${PCL_LIBRARIES})
+add_executable(registration_3 "ndt.cpp")
+target_link_libraries(registration_3 ${PCL_LIBRARIES})
