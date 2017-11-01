@@ -37,8 +37,8 @@
             <DistClean command="/usr/bin/make -f &quot;/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="registration_3">
-         <Option output="/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/registration_3" prefix_auto="0" extension_auto="0" />
+      <Target title="sac_ndt">
+         <Option output="/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/sac_ndt" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default" />
          <Option object_output="./" />
          <Option type="1" />
@@ -68,14 +68,14 @@
             <Add directory="/usr/local/include/pcl-1.8" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 registration_3" />
+            <Build command="/usr/bin/make -f &quot;/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 sac_ndt" />
             <CompileFile command="/usr/bin/make -f &quot;/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
-      <Target title="registration_3/fast">
-         <Option output="/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/registration_3" prefix_auto="0" extension_auto="0" />
+      <Target title="sac_ndt/fast">
+         <Option output="/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/sac_ndt" prefix_auto="0" extension_auto="0" />
          <Option working_dir="/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default" />
          <Option object_output="./" />
          <Option type="1" />
@@ -105,15 +105,15 @@
             <Add directory="/usr/local/include/pcl-1.8" />
          </Compiler>
          <MakeCommands>
-            <Build command="/usr/bin/make -f &quot;/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 registration_3/fast" />
+            <Build command="/usr/bin/make -f &quot;/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 sac_ndt/fast" />
             <CompileFile command="/usr/bin/make -f &quot;/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 &quot;$file&quot;" />
             <Clean command="/usr/bin/make -f &quot;/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
             <DistClean command="/usr/bin/make -f &quot;/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/Makefile&quot;  VERBOSE=1 clean" />
          </MakeCommands>
       </Target>
       </Build>
-      <Unit filename="/home/vless/projects/qt_projs/registration/registration1/ndt.cpp">
-         <Option target="registration_3"/>
+      <Unit filename="/home/vless/projects/qt_projs/registration/registration1/sac-ndt.cpp">
+         <Option target="sac_ndt"/>
       </Unit>
       <Unit filename="/home/vless/projects/qt_projs/registration/registration1/CMakeLists.txt">
           <Option virtualFolder="CMake Files\" />

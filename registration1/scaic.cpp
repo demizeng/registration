@@ -82,7 +82,7 @@ int
    voxel_grid_2.setInputCloud(cloud_tgt_o);
    PointCloud::Ptr cloud_tgt (new PointCloud);
    voxel_grid_2.filter(*cloud_tgt);
-   std::cout<<"down size *cloud_src_o from "<<cloud_tgt_o->size()<<"to"<<cloud_tgt->size()<<endl;
+   std::cout<<"down size *cloud_tgt_o.pcd from "<<cloud_tgt_o->size()<<"to"<<cloud_tgt->size()<<endl;
    pcl::io::savePCDFileASCII("bunny_tgt_down.pcd",*cloud_tgt);
 
 

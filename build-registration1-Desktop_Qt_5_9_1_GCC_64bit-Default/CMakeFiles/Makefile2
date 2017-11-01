@@ -60,39 +60,39 @@ CMAKE_SOURCE_DIR = /home/vless/projects/qt_projs/registration/registration1
 CMAKE_BINARY_DIR = /home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default
 
 #=============================================================================
-# Target rules for target CMakeFiles/registration_3.dir
+# Target rules for target CMakeFiles/sac_ndt.dir
 
 # All Build rule for target.
-CMakeFiles/registration_3.dir/all:
-	$(MAKE) -f CMakeFiles/registration_3.dir/build.make CMakeFiles/registration_3.dir/depend
-	$(MAKE) -f CMakeFiles/registration_3.dir/build.make CMakeFiles/registration_3.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/CMakeFiles --progress-num=1,2 "Built target registration_3"
-.PHONY : CMakeFiles/registration_3.dir/all
+CMakeFiles/sac_ndt.dir/all:
+	$(MAKE) -f CMakeFiles/sac_ndt.dir/build.make CMakeFiles/sac_ndt.dir/depend
+	$(MAKE) -f CMakeFiles/sac_ndt.dir/build.make CMakeFiles/sac_ndt.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/CMakeFiles --progress-num=1,2 "Built target sac_ndt"
+.PHONY : CMakeFiles/sac_ndt.dir/all
 
 # Include target in all.
-all: CMakeFiles/registration_3.dir/all
+all: CMakeFiles/sac_ndt.dir/all
 
 .PHONY : all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/registration_3.dir/rule: cmake_check_build_system
+CMakeFiles/sac_ndt.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/CMakeFiles 2
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/registration_3.dir/all
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sac_ndt.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/vless/projects/qt_projs/registration/build-registration1-Desktop_Qt_5_9_1_GCC_64bit-Default/CMakeFiles 0
-.PHONY : CMakeFiles/registration_3.dir/rule
+.PHONY : CMakeFiles/sac_ndt.dir/rule
 
 # Convenience name for target.
-registration_3: CMakeFiles/registration_3.dir/rule
+sac_ndt: CMakeFiles/sac_ndt.dir/rule
 
-.PHONY : registration_3
-
-# clean rule for target.
-CMakeFiles/registration_3.dir/clean:
-	$(MAKE) -f CMakeFiles/registration_3.dir/build.make CMakeFiles/registration_3.dir/clean
-.PHONY : CMakeFiles/registration_3.dir/clean
+.PHONY : sac_ndt
 
 # clean rule for target.
-clean: CMakeFiles/registration_3.dir/clean
+CMakeFiles/sac_ndt.dir/clean:
+	$(MAKE) -f CMakeFiles/sac_ndt.dir/build.make CMakeFiles/sac_ndt.dir/clean
+.PHONY : CMakeFiles/sac_ndt.dir/clean
+
+# clean rule for target.
+clean: CMakeFiles/sac_ndt.dir/clean
 
 .PHONY : clean
 

@@ -111,44 +111,44 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named registration_3
+# Target rules for targets named sac_ndt
 
 # Build rule for target.
-registration_3: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 registration_3
-.PHONY : registration_3
+sac_ndt: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sac_ndt
+.PHONY : sac_ndt
 
 # fast build rule for target.
-registration_3/fast:
-	$(MAKE) -f CMakeFiles/registration_3.dir/build.make CMakeFiles/registration_3.dir/build
-.PHONY : registration_3/fast
+sac_ndt/fast:
+	$(MAKE) -f CMakeFiles/sac_ndt.dir/build.make CMakeFiles/sac_ndt.dir/build
+.PHONY : sac_ndt/fast
 
-ndt.o: ndt.cpp.o
+sac-ndt.o: sac-ndt.cpp.o
 
-.PHONY : ndt.o
+.PHONY : sac-ndt.o
 
 # target to build an object file
-ndt.cpp.o:
-	$(MAKE) -f CMakeFiles/registration_3.dir/build.make CMakeFiles/registration_3.dir/ndt.cpp.o
-.PHONY : ndt.cpp.o
+sac-ndt.cpp.o:
+	$(MAKE) -f CMakeFiles/sac_ndt.dir/build.make CMakeFiles/sac_ndt.dir/sac-ndt.cpp.o
+.PHONY : sac-ndt.cpp.o
 
-ndt.i: ndt.cpp.i
+sac-ndt.i: sac-ndt.cpp.i
 
-.PHONY : ndt.i
+.PHONY : sac-ndt.i
 
 # target to preprocess a source file
-ndt.cpp.i:
-	$(MAKE) -f CMakeFiles/registration_3.dir/build.make CMakeFiles/registration_3.dir/ndt.cpp.i
-.PHONY : ndt.cpp.i
+sac-ndt.cpp.i:
+	$(MAKE) -f CMakeFiles/sac_ndt.dir/build.make CMakeFiles/sac_ndt.dir/sac-ndt.cpp.i
+.PHONY : sac-ndt.cpp.i
 
-ndt.s: ndt.cpp.s
+sac-ndt.s: sac-ndt.cpp.s
 
-.PHONY : ndt.s
+.PHONY : sac-ndt.s
 
 # target to generate assembly for a file
-ndt.cpp.s:
-	$(MAKE) -f CMakeFiles/registration_3.dir/build.make CMakeFiles/registration_3.dir/ndt.cpp.s
-.PHONY : ndt.cpp.s
+sac-ndt.cpp.s:
+	$(MAKE) -f CMakeFiles/sac_ndt.dir/build.make CMakeFiles/sac_ndt.dir/sac-ndt.cpp.s
+.PHONY : sac-ndt.cpp.s
 
 # Help Target
 help:
@@ -158,10 +158,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... registration_3"
-	@echo "... ndt.o"
-	@echo "... ndt.i"
-	@echo "... ndt.s"
+	@echo "... sac_ndt"
+	@echo "... sac-ndt.o"
+	@echo "... sac-ndt.i"
+	@echo "... sac-ndt.s"
 .PHONY : help
 
 
